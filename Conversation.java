@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 class Conversation {
 
@@ -38,6 +38,7 @@ class Conversation {
       String words[] = text.split(" ");
 
       Boolean use_random = true;
+
       for (int j = 0; j < words.length; j++){
         //System.out.println(Arrays.toString(words));
         //System.out.println(use_random);
@@ -77,5 +78,5 @@ class Conversation {
     }
     
       
-    }
   }
+}
