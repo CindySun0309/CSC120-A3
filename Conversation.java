@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Arrays;
 
 class Conversation {
 
@@ -11,35 +14,68 @@ class Conversation {
 
     System.out.println("Hi there!  What's on your mind?");
 
+    ArrayList<String> responds = new ArrayList<String>();
+    responds.add("Mmm-hm.");
+    responds.add("Okay.");
+    responds.add("I understand.");
+    responds.add("Sure.");
+    responds.add("I see.");
+    responds.add("I can tell.");
+    //System.out.println(responds);
+    
     for (int i = 0; i < round; i++) {
       Scanner userInput2 = new Scanner(System.in);
       String text = userInput2.nextLine();
-      System.out.println("Mmm-hm.");
+
+      Random rand = new Random();
+      int rand_int = rand.nextInt(6);
+      //System.out.println("Random Integer: " + rand_int);
+
+      //System.out.println(responds.get(rand_int));
+      //System.out.println("Mmm-hm.");
 
 
       String words[] = text.split(" ");
-      /*for (int j = 0; j < words.length; j++){
-        if (words[j] == "I") {
+
+      Boolean use_random = true;
+      for (int j = 0; j < words.length; j++){
+        //System.out.println(Arrays.toString(words));
+        //System.out.println(use_random);
+
+        if (words[j].equals("I")) {
+          use_random = false;
           words[j] = "you";
         }
-        else if (words[j] == "me") {
+        else if (words[j].equals("me")) {
+          use_random = false;
           words[j] = "you";
         }
-        else if (words[j] == "am") {
+        else if (words[j].equals("am")) {
+          use_random = false;
           words[j] = "are";
         }
-        else if (words[j] == "you") {
+        else if (words[j].equals("you")) {
+          use_random = false;
           words[j] = "I";
         }
-        else if (words[j] == "my") {
+        else if (words[j].equals("my")) {
+          use_random = false;
           words[j] = "your";
         }
-        else if (words[j] == "your") {
+        else if (words[j].equals("your")) {
+          use_random = false;
           words[j] = "my";
         } 
-        System.out.print(text);
-      }*/
+      }
+      if (use_random == true) {
+        System.out.println(responds.get(rand_int));
+      }
+      else {
+        String result = String.join(" ", words);
+        System.out.println(result);
+      }
+    }
+    
       
     }
   }
-}
