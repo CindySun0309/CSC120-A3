@@ -1,3 +1,6 @@
+/** author = Cindy Sun
+ * course = CSC120 */
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
