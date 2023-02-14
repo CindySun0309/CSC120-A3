@@ -18,7 +18,7 @@ ___YES__ 1 pt: Program queries user for number of conversation rounds
 
 __YES___ 1 pt: Program carries out requested number of conversation rounds
 
-_____ 1 pt: Allocates static array of canned responses
+___YES__ 1 pt: Allocates static array of canned responses
 
 ### Level 2 (3 pts)
 
@@ -32,9 +32,9 @@ __YES___ 1 pt: Replaces simple mirror words appropriately (unpunctuated, lowerca
 
 ___YES__ 1 pt: Makes all appropriate mirror replacements
 
-_____ 1 pt: Stores transcript of the conversation in an array
+___YES__ 1 pt: Stores transcript of the conversation in an array (I used arraylist)
 
-_____ 1 pt: Prints transcript when terminating
+__YES___ 1 pt: Prints transcript when terminating
 
 ## Kudos:
 
@@ -48,13 +48,13 @@ _____ (Kudos!) Handles you --> me/I dilemma
 
 ## General Items:
 
-_____ 4 pts: Programs compile without errors or warnings
+___YES__ 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+__YES___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+__YES___ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
-      _____ Classes & class members all have Javadoc header comments
+      __YES___ Classes & class members all have Javadoc header comments
 
       ___YES__ Clear and consistent indentation of bracketed sections
 
