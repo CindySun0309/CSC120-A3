@@ -1,7 +1,7 @@
 Use this file to record your reflection on this assignment.
 
 - Which classmates did you consult with while working on this assignment?
-Quinn
+Quinn, Sarah
 - Which session(s) of TA / office hours did you attend?
 Sunday 1-3pm （Chris), Sunday 7-9pm (Asher, Allison), Jordan's office hour on Monday 3-4pm (but I did not get help), Monday 7-9pm (Mariem)
 - What are your initial impressions of Java? 
